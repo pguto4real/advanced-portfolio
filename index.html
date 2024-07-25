@@ -16,6 +16,7 @@
             });
         })();
     </script>
+    <script src="index.js"></script>
 </head>
 
 <body>
@@ -157,14 +158,14 @@
                 <h4 class="modal__sub-title modal__sub-title--contact">
                     I'm currently open to new opportunities.
                 </h4>
-                <form onsubmit="contact()" id="contact__form">
+                <form onsubmit="contact(event)" id="contact__form">
                     <div class="form__item">
                         <label for="name" class="form__item--label">Name</label>
-                        <input class="input" name="user_name" required type="text">
+                        <input class="input" name="user_name"  type="text">
                     </div>
                     <div class="form__item">
                         <label for="email" class="form__item--label">Email</label>
-                        <input class="input" name="user_email" required type="email">
+                        <input class="input" name="user_email"  type="email">
                     </div>
                     <div class="form__item">
                         <label for="message" class="form__item--label">Message</label>
@@ -177,7 +178,7 @@
                     <i class="fas fa-spinner"></i>
                 </div>
                 <div class="modal__overlay modal__overlay--succces">
-                    Thanks for the message looking forward to speaking to you soon
+                    The Email Service is <br>temporarily unavailable. <br>Please contact me directly on <br>oluwamuibiigbokwe@gmail.com"
                 </div>
             </div>
             <i class="fas fa-times modal__exit click"></i>
