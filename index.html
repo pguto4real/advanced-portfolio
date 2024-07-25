@@ -24,28 +24,28 @@
         <nav>
             <figure><img id="personal-logo" src="/assets/logo.svg" alt=""></figure>
             <ul class="nav__link--list">
-                <li class="nav__link">
-                    <a href="" class="
+                <li class="nav__link"  onclick="toggleModal()">
+                    <a  class="
                     nav__link--anchor 
                     link__hover-effect 
                     link__hover-effect--black">About
                     </a>
                 </li>
                 <li class="nav__link">
-                    <a href="" class="
+                    <a href="#projects" class="
                     nav__link--anchor 
                     link__hover-effect 
                     link__hover-effect--black">Projects
                     </a>
                 </li>
-                <li class="nav__link">
-                    <a href="" class="
+                <li class="nav__link"  onclick="toggleModal()">
+                    <a class=" 
                     nav__link--anchor 
                     link__hover-effect 
                     link__hover-effect--black">Contact
                     </a>
                 </li>
-                <li class="nav__link click">
+                <li class="nav__link click" >
                     <a href="" class="
                     nav__link--anchor 
                     link__hover-effect 
@@ -60,7 +60,7 @@
                 <h1 class="title orange">I'm Oluwamuibi</h1>
                 <p class="header__para">I'm a <b class="orange">Frontend Software Engineer </b>with a strong passion for
                     building web applications with great user experiences.
-                    <br>Here's a bit more <b class="orange">about me.</b>
+                    <br>Here's a bit more <b class="orange click" onclick="toggleModal()">about me.</b>
                 </p>
                 <div class="social__list">
                     <a href="#" class="social__link click" target="_blank">
@@ -180,8 +180,9 @@
                 <div class="modal__overlay modal__overlay--succces">
                     The Email Service is <br>temporarily unavailable. <br>Please contact me directly on <br>oluwamuibiigbokwe@gmail.com"
                 </div>
+                <i class="fas fa-times modal__exit click"  onclick="toggleModal()"></i>
             </div>
-            <i class="fas fa-times modal__exit click"></i>
+           
         </div>
 
     </section>

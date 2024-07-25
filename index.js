@@ -29,7 +29,7 @@ function contact(event) {
 }
 let isModalOpen = false
 function toggleModal() {
-
+// alert(123)
     if (isModalOpen) {
         isModalOpen = false
         return document.body.classList.remove("modal--open")
