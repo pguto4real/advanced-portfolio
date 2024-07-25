@@ -20,14 +20,21 @@ function contact(event) {
         succces.classList += ' modal__overlay--visible'
     }).catch(() => {
         loading.classList.remove('modal__overlay--visible')
-        
+
         succces.innerHTML = "The Email Service is temporarily unavailable. Please contact me directly on oluwamuibiigbokwe@gmail.com"
         succces.style.fontSize = '30px';
         succces.classList += ' modal__overlay--visible'
         // console.log('it does not work')
     })
 }
+let isModalOpen = false
+function toggleModal() {
 
-function toggleModule(){
+    if (isModalOpen) {
+        isModalOpen = false
+        return document.body.classList.remove("modal--open")
+    }
+    isModalOpen = true
     // toggle module
+    document.body.classList += " modal--open"
 }
