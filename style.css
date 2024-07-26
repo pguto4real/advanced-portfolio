@@ -769,3 +769,65 @@ Shapes */
     left: 100vh;
 }
 
+
+
+@media (max-width:768px) {
+
+    .title{
+        font-size: 80px;
+    }
+    .header__para{
+        font-size: 20px;
+    }
+
+    .modal{
+        top: 0;
+        left: 0;
+        height: auto;
+        width: 100%;
+        transform: none;
+        flex-direction: column-reverse;
+        border-radius: 0;
+    }
+    .modal__half{
+        width: 100%;
+    }
+    .modal__languages {
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: space-evenly;
+        padding: 0;
+    }
+    .modal__languages:has(> :last-child:nth-child(3)) .modal__language {
+        width: calc(100% / 3);
+    }
+ 
+}
+@media (max-width:480px) {
+
+.title{
+    font-size: 52px;
+}
+.header__para{
+    font-size: 18px;
+}
+.nav__link:first-child{
+    display: none;
+}
+
+.project__description--para{
+    display: none;
+}
+.project__description{
+    left: 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+}
+.project__description--sub-title{
+    margin-bottom: 8px;
+}
+.modal__half{
+    padding: 40px;
+}
+}
