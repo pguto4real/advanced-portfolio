@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,500;1,700;1,900&display=swap');
 
-html{
+html {
     scroll-behavior: smooth;
 }
+
 * {
     font-family: "Roboto", sans-serif;
     padding: 0;
@@ -18,7 +19,8 @@ a {
     text-decoration: none;
 }
 
-input,textarea{
+input,
+textarea {
     width: 100%;
     background-color: #242424;
     color: white;
@@ -31,20 +33,22 @@ input,textarea{
     transition: all 300ms ease;
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
     border-color: #f06449;
 }
 
-input:hover, textarea:hover {
+input:hover,
+textarea:hover {
     border-color: #dcdfe6;
 }
 
-label{
+label {
     font-size: 14px;
     font-weight: bold;
 }
 
-textarea{
+textarea {
     resize: vertical;
     height: 100px;
     min-height: 50px;
@@ -129,9 +133,10 @@ button {
     left: 0;
     width: 100%;
 }
+
 nav,
 .scroll,
-.header{
+.header {
     opacity: 1;
     visibility: visible;
     transition: all 600ms 800ms;
@@ -139,11 +144,12 @@ nav,
 
 .modal--open nav,
 .modal--open .scroll,
-.modal--open .header{
+.modal--open .header {
     opacity: 0;
     visibility: hidden;
     transition: all 400ms 200ms;
 }
+
 /* .link__hover-effect:hover:after {
         left: 0;
         width: 100%;
@@ -296,36 +302,40 @@ Modal
     width: 90%;
     max-width: 1100px;
     height: 700px;
-    
+
     border-radius: 20px;
     overflow: hidden;
     display: flex;
     visibility: hidden;
     z-index: -1;
-    transition: visibility 1s,z-index 1s,box-shadow 0.5s ease;
+    transition: visibility 1s, z-index 1s, box-shadow 0.5s ease;
 }
-.modal--open .modal{
+
+.modal--open .modal {
     z-index: 60;
     box-shadow: 0 20px 80px 0 rgb(0, 0, 0, 0.55);
     visibility: visible;
 }
+
 .modal__half {
     width: 50%;
     display: flex;
     flex-direction: column;
-    padding: 40px 72px; 
+    padding: 40px 72px;
     justify-content: center;
     position: relative;
     transition: all 300ms ease-in;
 }
 
 .modal__about {
-    background-color: rgb(245, 245, 245);   
+    background-color: rgb(245, 245, 245);
     transform: translateX(-110%);
 }
-.modal--open .modal__about{
-  transform: translateX(0%);
+
+.modal--open .modal__about {
+    transform: translateX(0%);
 }
+
 .modal__languages {
     display: flex;
     flex-wrap: wrap;
@@ -340,9 +350,11 @@ Modal
     align-items: center;
     transition: all 300ms ease;
 }
-.form__item{
+
+.form__item {
     margin-bottom: 20px;
 }
+
 /* 
 0 elements 
 .container:not(:has(*)) { 
@@ -414,10 +426,12 @@ Modal
     color: white;
     transform: translateX(110%);
 }
-.modal--open .modal__contact{
+
+.modal--open .modal__contact {
     transform: translateX(0%);
-  }
-.form__submit{
+}
+
+.form__submit {
     background-color: #f06449;
     border: 2px solid #f06449;
     color: white;
@@ -428,16 +442,19 @@ Modal
     font-size: 20px;
     transition: all 300ms ease;
 }
-.form__submit:hover{
+
+.form__submit:hover {
     background-color: transparent;
     border-color: #fff;
 
 }
-.form__submit:active{
+
+.form__submit:active {
     border-color: #f06449;
     color: #f06449;
 }
-.modal__overlay{
+
+.modal__overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -447,37 +464,44 @@ Modal
     align-items: center;
     z-index: -1;
 }
-.modal__overlay--visible{
+
+.modal__overlay--visible {
     z-index: 1;
     display: flex;
 }
-.modal__overlay--succces{
+
+.modal__overlay--succces {
     background-color: #4bb543;
     font-size: 40px;
     font-weight: 700;
     text-align: center;
     padding: 28px;
-  
+
 }
-.modal__overlay--loading{
+
+.modal__overlay--loading {
     background-color: #242424;
-    
+
     justify-content: center;
     font-size: 80px;
 
 }
-.fa-spinner{
-animation: spinner 750ms infinite linear;
+
+.fa-spinner {
+    animation: spinner 750ms infinite linear;
 }
+
 @keyframes spinner {
-    0%{
+    0% {
         transform: rotate(0);
     }
-    100%{
+
+    100% {
         transform: rotate(360deg);
     }
 }
-.modal__exit{
+
+.modal__exit {
     position: absolute;
     top: 30px;
     right: 40px;
@@ -485,31 +509,35 @@ animation: spinner 750ms infinite linear;
     font-size: 36px;
 
     z-index: 100;
-    
+
 }
+
 .dark-theme .title,
 .dark-theme .section__title,
 .dark-theme .section__sub-title,
 .dark-theme .nav__link--anchor,
 .dark-theme .fa-adjust,
-.dark-theme .header__para
-{
-color: white;
+.dark-theme .header__para {
+    color: white;
 }
-.dark-theme section{
+
+.dark-theme section {
     background-color: #242424;
 }
 
-.dark-theme #personal-logo{
+.dark-theme #personal-logo {
     filter: none
 }
-.dark-theme .scroll__icon{
-   border-color: white;
+
+.dark-theme .scroll__icon {
+    border-color: white;
 }
-.dark-theme .scroll__icon:after{
+
+.dark-theme .scroll__icon:after {
     background-color: white;
 }
-.dark-theme .mail__btn{
+
+.dark-theme .mail__btn {
     background-color: white;
     color: #242424;
 }
@@ -519,6 +547,7 @@ color: white;
 .dark-theme .link__hover-effect--black:after {
     background-color: white;
 }
+
 /* 
 Projects Page
  */
@@ -649,74 +678,95 @@ footer {
 Shapes */
 
 
-.shape{
-    position :fixed
+.shape {
+    position: fixed
 }
-.shape--0{
+
+.shape--0 {
     top: 15vh;
     left: 10vh;
 }
-.shape--2{
+
+.shape--2 {
     top: 15vh;
     left: 40vh;
 }
-.shape--3{
+
+.shape--3 {
     top: 15vh;
     left: 70vh;
 }
-.shape--4{
+
+.shape--4 {
     top: 15vh;
     left: 100vh;
 }
-.shape--5{
+
+.shape--5 {
     top: 15vh;
     left: 130vh;
 }
-.shape--6{
+
+.shape--6 {
     top: 50vh;
     left: 10vh;
 }
-.shape--7{
+
+.shape--7 {
     top: 50vh;
     left: 40vh;
 }
-.shape--8{
+
+.shape--8 {
     top: 50vh;
     left: 70vh;
 }
-.shape--9{
+
+.shape--9 {
     top: 50vh;
     left: 100vh;
 }
-.shape--10{
+
+.shape--10 {
     top: 50vh;
     left: 130vh;
 }
-.shape--11{
+
+.shape--11 {
     top: 95vh;
     left: 10vh;
 }
-.shape--12{
+
+.shape--12 {
     top: 95vh;
     left: 40vh;
 }
-.shape--13{
+
+.shape--13 {
     top: 95vh;
     left: 70vh;
 }
-.shape--14{
+
+.shape--14 {
     top: 95vh;
     left: 100vh;
 }
-.shape--15{
+
+.shape--15 {
     top: 95vh;
     left: 130vh;
 }
-.shape--1{
+
+.shape--1 {
     top: 35vh;
     left: 70vh;
 }
-.shape--16{
+
+.shape--16 {
     top: 70vh;
     left: 70vh;
 }
+
+
+
+@media (max-width:768px) {}
