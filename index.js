@@ -12,12 +12,12 @@ const shapes = document.querySelectorAll('.shape')
 const x = event.clientX * scaleFactor
 const y = event.clientY * scaleFactor
 
-
+console.log(x,y)
 for(let i = 0;i< shapes.length; i++)
 {
     const isOdd = i%2 !== 0;
     const booleanInt = isOdd ? -1 : 1
-    shapes[i].style.transform = `translate(${x * booleanInt}px,${y * booleanInt}px)`
+    shapes[i].style.transform = `translate(${x * booleanInt}px,${y * booleanInt}px) rotate(${(x * 10)*booleanInt}deg)`
 }
 console.log(x,y)
 }

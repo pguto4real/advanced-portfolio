@@ -212,6 +212,7 @@ Landing Page
     bottom: 32px;
     right: 40px;
     z-index: 100;
+    box-shadow: 0 12px 30px 0 rgb(0, 0, 0,0.28);
 }
 
 .scroll {
@@ -632,6 +633,7 @@ Projects Page
 /* FOOTER */
 
 footer {
+    position: relative;
     background-color: #242424;
     display: flex;
     padding: 6% 0;
@@ -689,22 +691,22 @@ Shapes */
 
 .shape--2 {
     top: 15vh;
-    left: 40vh;
+    left: 55vh;
 }
 
 .shape--3 {
     top: 15vh;
-    left: 70vh;
+    left: 100vh;
 }
 
 .shape--4 {
     top: 15vh;
-    left: 100vh;
+    left: 145vh;
 }
 
 .shape--5 {
     top: 15vh;
-    left: 130vh;
+    left: 190vh;
 }
 
 .shape--6 {
@@ -714,22 +716,22 @@ Shapes */
 
 .shape--7 {
     top: 50vh;
-    left: 40vh;
+    left: 55vh;
 }
 
 .shape--8 {
     top: 50vh;
-    left: 70vh;
+    left: 100vh;
 }
 
 .shape--9 {
     top: 50vh;
-    left: 100vh;
+    left: 145vh;
 }
 
 .shape--10 {
     top: 50vh;
-    left: 130vh;
+    left: 19vh;
 }
 
 .shape--11 {
@@ -739,34 +741,31 @@ Shapes */
 
 .shape--12 {
     top: 95vh;
-    left: 40vh;
+    left: 55vh;
 }
 
 .shape--13 {
     top: 95vh;
-    left: 70vh;
+    left: 100vh;
 }
 
 .shape--14 {
     top: 95vh;
-    left: 100vh;
+    left: 145vh;
 }
 
 .shape--15 {
     top: 95vh;
-    left: 130vh;
+    left: 190vh;
 }
 
 .shape--1 {
     top: 35vh;
-    left: 70vh;
+    left: 100vh;
 }
 
 .shape--16 {
     top: 70vh;
-    left: 70vh;
+    left: 100vh;
 }
 
-
-
-@media (max-width:768px) {}
